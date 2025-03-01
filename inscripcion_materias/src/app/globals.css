@@ -1,0 +1,80 @@
+/* globals.css */
+
+/* Variables CSS */
+:root {
+  --primary-color: #6200ea;
+  --primary-color-dark: #3700b3;
+  --background-color: #121212;
+  --header-background: #1e1e1e;
+  --text-color: #ffffff;
+  --secondary-text-color: #c0c0c0;
+  --border-color: #333;
+  --list-item-background: #242424;
+  --button-padding: 10px 15px;
+  --border-radius: 8px;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+header {
+  text-align: center;
+  background: var(--header-background);
+  padding: 20px;
+  border-bottom: 2px solid var(--border-color);
+  width: 100%;
+}
+
+h1, h2 {
+  color: var(--text-color);
+}
+
+h3 {
+  margin: 10px 0;
+  color: var(--secondary-text-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+li {
+  background: var(--list-item-background);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: var(--border-radius);
+  width: 80%;
+  text-align: center;
+}
+
+button {
+  background: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: var(--button-padding);
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: center; /* Asegura que el botón esté centrado */
+}
+
+button:hover {
+  background: var(--primary-color-dark);
+}
